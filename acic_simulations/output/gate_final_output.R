@@ -4,8 +4,8 @@ library("gridExtra")
 library("grid")
 library("ggplot2")
 
-load("/Users/christianwirths/Documents/Msc_Thesis_CausalML/acic_simulations/output/gate_final_ouput.RData")
-knobs <- read.csv("~/Documents/MasterThesis_Christian/acic/2016/knobs_all.csv", sep=";")
+load("~/Documents/GitHub/MSc_Thesis_CausalML/acic_simulations/output/gate_final_ouput.RData")
+knobs <- read.csv("~/Documents/GitHub/MSc_Thesis_CausalML/acic_simulations/knobs_all.csv", sep=";")
 b_idx <- c(28,56,41,22,32,30,27) #Benchmark analysis
 names_low <-  c("GE Lasso low" ,"GE Trees low " ,"GE Boost low","GE RF low","GE Nnet low","GE BART low", "Causal Forest low", "BART MChains low")
 names_high <- c("GE Lasso high" ,"GE Trees high " ,"GE Boost high","GE RF high","GE Nnet high", "GE BART high", "Causal Forest high", "BART MChains high")
@@ -85,11 +85,6 @@ interval_overview <- plot(low_matrix_interval, high_matrix_interval,methods=coln
 
 grid.arrange(bias_overview, rmse_overview, ncol=2)
 grid.arrange(coverage_overview, interval_overview, ncol=2)
-
-
-knobs_all <- read.csv("~/Documents/MasterThesis_Christian/acic/2016/knobs_all.csv", sep=";")
-knobs <- knobs_all[analyze,!colnames(knobs_all)%in%c("knob")] 
-
 
 #plot rmse per category
 

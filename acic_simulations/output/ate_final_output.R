@@ -6,7 +6,7 @@ library("grid")
 library("ggplot2")
 
 load("~/Documents/GitHub/MSc_Thesis_CausalML/acic_simulations/output/ate_final_output.RData")
-knobs <- read.csv("~/Documents/MasterThesis_Christian/acic/2016/knobs_all.csv", sep=";")
+knobs <- read.csv("~/Documents/GitHub/MSc_Thesis_CausalML/acic_simulations/knobs_all.csv", sep=";")
 b_index <-c(27,55,40,21,31,29,28) #Benchmark analysis
 
 # Tables ------------------------------------------------------------------

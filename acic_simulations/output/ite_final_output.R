@@ -4,8 +4,8 @@ library("gridExtra")
 library("grid")
 library("ggplot2")
 
-knobs <- read.csv("~/Documents/MasterThesis_Christian/acic/2016/knobs_all.csv", sep=";")
-load("/Users/christianwirths/Documents/Msc_Thesis_CausalML/acic_simulations/output/ite_final_output.RData")
+knobs <- read.csv("~/Documents/GitHub/MSc_Thesis_CausalML/acic_simulations/knobs_all.csv", sep=";")
+load("~/Documents/GitHub/MSc_Thesis_CausalML/acic_simulations/output/ite_final_output.RData")
 
 plot <-function(data, y_name, methods, title, r=100, pos=0.75, lim=0.8, text_size=17){
   k <- nrow(data)
