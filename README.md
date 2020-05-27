@@ -9,7 +9,7 @@ II: GSS application  
 
 	1.	Download “GSS7218_R1.DTA” from https://gss.norc.org/ and store raw data in directory “.../gss_application/”
 	2.	Run “.../gss_application/data_prep.R” to prepare data as input for Causal ML methods
-	3.	Run Causal ML method of interest.(
+	3.	Run Causal ML method of interest.
 References:
 
 	•	Athey, S., Tibshirani, J., & Wager, S. (2019). Generalized random forests. The Annals of Statistics, 47 (2), 1148–1178
