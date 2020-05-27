@@ -2,8 +2,8 @@ ReadMe for Master Thesis “Evaluating Causal Machine Learning methods”
 
 I: Atlantic Causal Inference competition simulation study on ATE, GATE and ITE
 
-	1.	Produce the simulation knobs with the script “create_sim_datasets.R” located in the directory “...acic_simulations/data_simulations/” 
-	2.	Execute all Causal ML methods in the corresponding subdirectories. Note that, since the computations are implemented on a  high-performance computing cluster, each subdirectory contains an example script for one knob (parameter k) which contains 100 simulations replications. To compute more knobs reproduce scripts and change parameter k or run in a loop with batch scripts. Global ML input parameters are stored in “...acic_simulations/globals_parameters.R”  In case you would like to tune ML parameters, first run “...acic_simulations/k_tune_sim.R” and then one of the general ML methods with "..._tune", e.g. "...dml/k_dml_acic_tune.R".
+	1.	Produce the simulation knobs with the script “create_sim_datasets.R” located in the directory “...acic_simulations/data_simulations/”.
+	2.	Execute all Causal ML methods in the corresponding subdirectories. Note that, since the computations are implemented on a high-performance computing cluster, each subdirectory contains an example script for one knob (parameter k) which contains 100 simulations replications. To compute more knobs reproduce scripts and change parameter k or run in a loop with batch scripts. Global ML input parameters are stored in “...acic_simulations/globals_parameters.R”. In case you would like to tune ML input parameters, first run “...acic_simulations/k_tune_sim.R” and then one of the general ML methods with "..._tune", e.g. "...dml/k_dml_acic_tune.R".
 	3.	After all methods are computed, merge the results for the ATE, GATE and ITE with the “...merge.R” scripts located in the directory “...acic_simulations/output/”. Final output is retrieved by running “...final_output.R”
 II: GSS application  
 
